@@ -30,7 +30,6 @@ Our hybrid architecture combines **deep reinforcement learning (DRL)** and tradi
 
 - `Python` | `NumPy` | `Matplotlib`
 - `TensorFlow` or `PyTorch` (for A2C)
-- `OpenAI Gym` (or custom simulation environment)
 - `PID Controller` logic implemented with adaptive layers
 
 ---
