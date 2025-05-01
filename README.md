@@ -1,6 +1,4 @@
-# Self Tuning PID using Deep Reinforcement Learning using Actor-Critic Model
-
-# 🚁 Adaptive PID Tuning for Quadcopters Using Advantage Actor-Critic (A2C)
+# Adaptive PID Tuning for Quadcopters Using Advantage Actor-Critic (A2C)
 
 This repository is a refined and research-driven implementation of adaptive PID tuning using the **Advantage Actor-Critic (A2C)** reinforcement learning algorithm, designed for **quadcopter control in dynamic environments**.
 
@@ -41,3 +39,31 @@ The architecture features:
 - **PID controller layer** tuned dynamically by RL agent
 - **Reward shaping** based on tracking error and control effort
 
+
+
+       [ Current State ]
+              ↓
+         ┌─────────┐
+         │  Actor  │─────► PID Gains (Kp, Ki, Kd)
+         └─────────┘
+              ↓
+         ┌─────────┐
+         │  Critic │─────► State-Value Estimation
+         └─────────┘
+
+
+## 🔬 Simulations
+
+| Scenario            | Evaluation Description                                         |
+|---------------------|----------------------------------------------------------------|
+| 📍 Stationary Hover | PID stabilization to fixed point with/without disturbances     |
+| 🔄 Circular Path    | Continuous PID adjustments for dynamic curvature path          |
+| 🧭 Square Path      | Abrupt turns, yaw control, and stability testing               |
+
+
+
+## 📈 Results
+
+- ✅ Effective gain tuning for altitude, pitch, roll, and yaw control  
+- 🌐 Maintained trajectory tracking under noise and payload variation  
+- 📉 Converged to optimal policy with stable reward progression  
